@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./SelectedContact.css";
 
 function SelectedContact({ setSelectedContactId, selectedContactId }) {
   console.log("SelectedContact() - selectedContactId = ", selectedContactId);
@@ -27,14 +28,25 @@ function SelectedContact({ setSelectedContactId, selectedContactId }) {
   }
 
   return (
-    <div>
-      <p>Name: {contact.name}</p>
-      <p>Email: {contact.email}</p>
-      <p>Phone Number: {contact.phone}</p>
-      <p>City: {contact.address.city}</p>
-      <p>Street: {contact.address.street}</p>
-      <p>Zip Code: {contact.address.zipcode}</p>
+    <div className="selected-contact">
+      <div className="selcted-contact-contact">
+        <p className="selected-contact-item">Name: {contact.name}</p>
+        <p className="selected-contact-item">Email: {contact.email}</p>
+        <p className="selected-contact-item">Phone Number: {contact.phone}</p>
+      </div>
+
+      <div className="slected-contact-address">
+        <p className="selected-contact-item">
+          Street: {contact.address.street}
+        </p>
+        <p className="selected-contact-item">City: {contact.address.city}</p>
+        <p className="selected-contact-item">
+          Zip Code: {contact.address.zipcode}
+        </p>
+      </div>
+
       <button
+        className="selected-contact-button"
         onClick={() => {
           setSelectedContactId(null);
         }}

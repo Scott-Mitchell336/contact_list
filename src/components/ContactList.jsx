@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ContactRow from "./ContactRow.jsx";
+import "./ContactList.css";
 
 function ContactList({ setSelectedContactId }) {
   const [contacts, setContacts] = useState([]);

@@ -4,7 +4,6 @@ import ContactList from "./components/ContactList.jsx";
 import SelectedContact from "./components/SelectedContact.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [selectedContactId, setSelectedContactId] = useState(null);
 
   console.log("App() - selectedContactId = ", selectedContactId);

@@ -3,6 +3,7 @@ import React from "react";
 function ContactRow({ setSelectedContactId, contact }) {
   console.log("ContactRow() - contact = ", contact);
   console.log("ContactRow() - setSelectedContactId = ", setSelectedContactId);
+
   return (
     <tr
       onClick={() => {
