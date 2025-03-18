@@ -1,3 +1,9 @@
+//
+// App.jsx
+// Created by Scott Mitchell on 03/14/2025
+// Block 26 - Contact List
+//
+
 import { useState } from "react";
 import "./App.css";
 import ContactList from "./components/ContactList.jsx";

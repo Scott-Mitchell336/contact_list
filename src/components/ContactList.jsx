@@ -1,3 +1,9 @@
+//
+// ContactList.jsx
+// Created by Scott Mitchell on 03/14/2025
+// Block 26 - Contact List
+//
+
 import React from "react";
 import { useState, useEffect } from "react";
 import ContactRow from "./ContactRow.jsx";

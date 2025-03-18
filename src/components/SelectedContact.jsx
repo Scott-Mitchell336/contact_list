@@ -1,3 +1,9 @@
+//
+// SelectedContact.jsx
+// Created by Scott Mitchell on 03/14/2025
+// Block 26 - Contact List
+//
+
 import React, { useEffect, useState } from "react";
 import "./SelectedContact.css";
 
